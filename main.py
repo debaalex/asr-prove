@@ -26,7 +26,7 @@ riva_asr = rasr_srv.RivaSpeechRecognitionStub(channel)
 riva_nlp = rnlp_srv.RivaLanguageUnderstandingStub(channel)
 riva_tts = rtts_srv.RivaSpeechSynthesisStub(channel)
 
-path = "/Users/alexdebertolis/PycharmProjects/pythonProject2/Record(online-audio-converter.com).wav"
+path = "/Users/alexdebertolis/PycharmProjects/pythonProject2/Record(online-audio-converter.com).wav" #percorso del file audio 
 audio, sr = librosa.core.load(path, sr=None)
 with io.open(path, 'rb') as fh:
     content = fh.read()
